@@ -30,3 +30,6 @@ zuul:
     svcb-service:
       path: /svcb/**
       sensitiveHeaders:
+spring:
+  zipkin:
+    base-url: http://192.168.0.220:9411
