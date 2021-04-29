@@ -15,10 +15,18 @@ eureka:
       management.context-path: ${server.context-path}${management.context-path}
 
 spring:
+  sleuth:
+    sampler:
+      percentage: 1
+    web:
+      client:
+        enabled: true
   datasource:
     url: jdbc:h2:mem:user
     driver-class-name: org.h2.Driver
   jpa:
     show-sql: true
   zipkin:
+    sender:
+      type: web
     base-url: http://192.168.0.220:9411
