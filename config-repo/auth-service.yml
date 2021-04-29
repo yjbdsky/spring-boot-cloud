@@ -29,4 +29,4 @@ spring:
   zipkin:
     sender:
       type: web
-    base-url: http://192.168.0.220:9411
+    base-url: http://192.168.0.220:9411/api/v1/spans
