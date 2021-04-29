@@ -38,7 +38,7 @@
 
 * 使用 Docker 快速启动
     1. 配置 Docker 环境
-    2. `mvn clean package` 打包项目及 Docker 镜像
+    2. `mvn clean package` 打包项目及 Docker 镜像 # mvn package -Dmaven.test.skip=true 跳过测试错误
     3. 在项目根目录下执行 `docker-compose up -d` 启动所有项目
 * 本地手动启动
     1. 配置 rabbitmq

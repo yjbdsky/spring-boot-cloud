@@ -11,6 +11,7 @@ services:
       - "8761:8761"
   config:
     image: spring-boot-cloud/config
+    network_mode: "host"
     ports:
       - "8888:8888"
   monitor:
