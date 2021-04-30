@@ -17,10 +17,20 @@ spring:
     config:
       server:
         git:
-          uri: https://git.tiduyun.com/yejinbang/spring-boot-cloud
+          uri: https://github.com/yjbdsky/spring-boot-cloud
           search-paths: config-repo
   rabbitmq:
     host: rabbitmq
+  sleuth:
+    sampler:
+      percentage: 1
+    web:
+      client:
+        enabled: true
+  zipkin:
+    sender:
+      type: web
+    base-url: http://192.168.0.220:9411
 
 security:
   user:

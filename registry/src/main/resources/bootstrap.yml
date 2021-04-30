@@ -1,3 +1,13 @@
 spring:
   application:
     name: registry
+  sleuth:
+    sampler:
+      percentage: 1
+    web:
+      client:
+        enabled: true
+  zipkin:
+    sender:
+      type: web
+    base-url: http://192.168.0.220:9411
