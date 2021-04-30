@@ -10,4 +10,4 @@ spring:
   zipkin:
     sender:
       type: web
-    base-url: http://192.168.0.220:9411
+    base-url: http://jaeger-collector:9411
