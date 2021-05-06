@@ -23,6 +23,7 @@ eureka:
 spring:
   rabbitmq:
     host: rabbitmq
+    port: 15672
   boot:
     admin:
       routes:
@@ -39,7 +40,7 @@ spring:
   zipkin:
     sender:
       type: web
-    base-url: http://jaeger-collector:9411
+    base-url: http://jaeger-collector.istio-system.svc.cluster.local:9411
 security:
   user:
     name: admin

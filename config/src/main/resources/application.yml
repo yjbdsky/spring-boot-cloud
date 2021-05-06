@@ -21,6 +21,7 @@ spring:
           search-paths: config-repo
   rabbitmq:
     host: rabbitmq
+    port: 15672
   sleuth:
     sampler:
       percentage: 1
@@ -30,7 +31,7 @@ spring:
   zipkin:
     sender:
       type: web
-    base-url: http://jaeger-collector:9411
+    base-url: http://jaeger-collector.istio-system.svc.cluster.local:9411
 
 security:
   user:
